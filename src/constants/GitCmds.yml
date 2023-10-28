@@ -1,0 +1,18 @@
+commands:
+- cmd: git init
+  desc: It initializes the git repository locally by creating a new hidden '.git' folder in the root of the project directory.
+
+- cmd: git add (-a or --all) or git add <give a specific file name>
+  desc: This command is used in Git to stage all changes in your working directory for the next commit. When you run this command, Git will identify and add all modified, deleted, and untracked files and changes to the staging area.
+
+- cmd: git restore --staged <file>
+  desc: It removes the specified file(s) from the staging area while keeping your changes intact in your working directory.
+
+- cmd: git commit -m 'Your commit message here'
+  desc: This command is used in Git to create a new commit with a specific commit message. Commits in Git are snapshots of the changes made to the repository at a given point in time.
+
+- cmd: git status
+  desc: This command in Git is used to display the current state of your working directory and the status of your Git repository.
+
+- cmd: git reset or git reset <filenames>
+  desc: which will reset the staging area (index) to the last commit while keeping your changes in your working directory.
