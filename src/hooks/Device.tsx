@@ -23,7 +23,7 @@ export default function useDevice() {
     return () => {
       window.removeEventListener("resize", deterDevice);
     };
-  }, []);
+  }, [device]);
 
   return [device];
 }
