@@ -9,6 +9,7 @@ import { Toaster } from "react-hot-toast";
 import Header from "@/components/header/Header";
 import { Providers } from "@/redux/provider";
 import { ThemeProvider } from "@/components/darkTheme/theme-provider";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID!} />
       <body className={`mt-10 pt-0 ${inter.className}`}>
         <Providers>
           <ThemeProvider
